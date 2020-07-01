@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Salona",
+    "version": "1.0",
+    "description": "Googleの検索結果の下にSalonaの検索結果を表示します。",
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com/*",
+                "https://www.google.co.jp/*"
+            ],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "homepage_url": "https://salona.org"
+}
