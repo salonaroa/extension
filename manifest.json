@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Salona",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Googleの検索結果の下にSalonaの検索結果を表示します。",
     "icons": {
         "16": "icon16.png",
@@ -15,8 +15,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.google.com/*",
-                "https://www.google.co.jp/*"
+                "https://www.google.com/search*",
+                "https://www.google.co.jp/search*"
             ],
             "js": ["contentScript.js"]
         }
